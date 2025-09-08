@@ -3,11 +3,11 @@
 ## 1. File & Directory Operations
 - Create file:  
   ```bash
-  touch file1.txt
+  touch file1.txt```
 
 - Create directory:
   ```bash
-  mkdir dir1
+  mkdir dir1```
 
 - Copy & move:
   ```bash
