@@ -5,80 +5,109 @@
   ```bash
   touch file1.txt```
 
-- Create directory:
+- Create directory:  
   ```bash
   mkdir dir1```
 
-- Copy & move:
+- Copy & move:  
   ```bash
-  cp file1.txt dir1/
-  mv file1.txt file2.txt
+  cp file1.txt dir1/```  
+  ```bash
+  mv file1.txt file2.txt```
 
-- Delete:
+- Delete:  
   ```bash
-  rm file2.txt
-  rmdir dir1
+  rm file2.txt```  
+  ```bash
+  rmdir dir1```
+
+---
 
 ## 2. File Viewing & Editing
-- View content:
+- View content:  
   ```bash
-  cat file1.txt
-  less file1.txt
-  head -n 10 file1.txt
-  tail -f logfile.log
+  cat file1.txt```  
+  ```bash
+  less file1.txt```  
+  ```bash
+  head -n 10 file1.txt```  
+  ```bash
+  tail -f logfile.log```
 
-- Edit:
+- Edit:  
   ```bash
-  nano file1.txt
-  vim file1.txt
+  nano file1.txt```  
+  ```bash
+  vim file1.txt```
+
+---
 
 ## 3. File Permissions (rwx)
-- View permissions:
+- View permissions:  
   ```bash
-  ls -l
+  ls -l```
 
-- Example output:
-```bash
--rw-r--r-- 1 user group 123 Sep 8 10:00 file1.txt
+- Example output:  
+  ```bash
+  -rw-r--r-- 1 user group 123 Sep 8 10:00 file1.txt```
 
-- Change permission:
-```bash
-chmod 755 script.sh    # numeric mode
-chmod u+x file1.txt    # symbolic mode
+- Change permission:  
+  ```bash
+  chmod 755 script.sh```  
+  ```bash
+  chmod u+x file1.txt```
 
-- Change ownership:
-sudo chown newuser:newgroup file1.txt
+- Change ownership:  
+  ```bash
+  sudo chown newuser:newgroup file1.txt```
 
-## Special Permissions
-- SUID: run with file owner's privileges
-chmod u+s file
+---
 
-- SGID: run with group privileges/shared dirs
-chmod g+s shared_dir
+## 4. Special Permissions
+- SUID: run with file owner's privileges  
+  ```bash
+  chmod u+s file```
 
-- Sticky bit: restrict delete to file owner
-chmod +t /shared
+- SGID: run with group privileges/shared dirs  
+  ```bash
+  chmod g+s shared_dir```
 
-## Access Control Lists (ACL)
-- View ACL:
-getfacl file1.txt
+- Sticky bit: restrict delete to file owner  
+  ```bash
+  chmod +t /shared```
 
-- Add permissions for another user:
-setfacl -m u:alice:r file1.txt
+---
 
-- Remove ACL:
-setfacl -x u:alice file1.txt
+## 5. Access Control Lists (ACL)
+- View ACL:  
+  ```bash
+  getfacl file1.txt```
 
-## Search & Find Files
-- Find by name:
-find /home -name "*.txt"
+- Add permissions for another user:  
+  ```bash
+  setfacl -m u:alice:r file1.txt```
 
-- Find by size:
-find /var -size +100M
+- Remove ACL:  
+  ```bash
+  setfacl -x u:alice file1.txt```
 
-- Locate (index-based):
-locate passwd
+---
 
-- Search inside files:
-grep "ERROR" logfile.log
+## 6. Search & Find Files
+- Find by name:  
+  ```bash
+  find /home -name "*.txt"```
+
+- Find by size:  
+  ```bash
+  find /var -size +100M```
+
+- Locate (index-based):  
+  ```bash
+  locate passwd```
+
+- Search inside files:  
+  ```bash
+  grep "ERROR" logfile.log```
+
 
