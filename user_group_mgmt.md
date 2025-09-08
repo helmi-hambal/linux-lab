@@ -5,9 +5,10 @@ whoami```
 id```
 groups```
 
-
 - Add new user:
-sudo adduser alice
+```bash
+sudo adduser alice```
+
 
 - Modify user (add to group):
 sudo usermod -aG devteam alice
