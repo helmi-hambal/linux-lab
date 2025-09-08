@@ -1,8 +1,8 @@
 ## 1. User Management
 - Check current user:
-whoami
-id
-groups
+whoami```
+id```
+groups```
 
 
 - Add new user:
