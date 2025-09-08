@@ -21,20 +21,24 @@
 
 ## 2. File Viewing & Editing
 - View content:
-cat file1.txt
-less file1.txt
-head -n 10 file1.txt
-tail -f logfile.log
+  ```bash
+  cat file1.txt
+  less file1.txt
+  head -n 10 file1.txt
+  tail -f logfile.log
 
 - Edit:
-nano file1.txt
-vim file1.txt
+  ```bash
+  nano file1.txt
+  vim file1.txt
 
 ## 3. File Permissions (rwx)
 - View permissions:
-ls -l
+  ```bash
+  ls -l
 
 Example output:
+```csharp
 -rw-r--r-- 1 user group 123 Sep 8 10:00 file1.txt
 
 - Change permission:
