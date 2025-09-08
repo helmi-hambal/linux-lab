@@ -10,8 +10,9 @@
   mkdir dir1
 
 - Copy & move:
-cp file1.txt dir1/
-mv file1.txt file2.txt
+  ```bash
+  cp file1.txt dir1/
+  mv file1.txt file2.txt
 
 - Delete:
 rm file2.txt
