@@ -37,11 +37,12 @@
   ```bash
   ls -l
 
-Example output:
-```csharp
+- Example output:
+```bash
 -rw-r--r-- 1 user group 123 Sep 8 10:00 file1.txt
 
 - Change permission:
+```bash
 chmod 755 script.sh    # numeric mode
 chmod u+x file1.txt    # symbolic mode
 
