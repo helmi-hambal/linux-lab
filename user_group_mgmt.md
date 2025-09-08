@@ -1,5 +1,6 @@
 ## 1. User Management
 - Check current user:
+```bash
 whoami```
 id```
 groups```
