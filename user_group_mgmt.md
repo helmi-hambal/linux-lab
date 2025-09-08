@@ -1,4 +1,4 @@
-## 1. User Management
+## User Management
 - Check current user:
   ```bash
   whoami```
@@ -25,43 +25,48 @@
 
 ## Group Management
 - Create new group:
-sudo groupadd devteam
+  ```bash
+  sudo groupadd devteam```
 
 - Check group details:
-getent group devteam
+  ```bash
+  getent group devteam```
 
 - Add user to group:
-sudo usermod -aG devteam alice
+  ```bash
+  sudo usermod -aG devteam alice```
 
 - Remove user from group:
-sudo deluser alice devteam
+  ```bash
+  sudo deluser alice devteam```
 
 - Delete group:
-sudo groupdel devteam
+  ```bash
+  sudo groupdel devteam```
 
 ## Shared Directory with SGID
 - Create shared dir for group:
-sudo mkdir /devteam-share
-sudo chown :devteam /devteam-share
-sudo chmod 770 /devteam-share
+  ```bash
+  sudo mkdir /devteam-share```
+  sudo chown :devteam /devteam-share```
+  sudo chmod 770 /devteam-share```
 
 - Enable SGID (new files inherit group):
-sudo chmod g+s /devteam-share
-ls -ld /devteam-share
+  ```bash
+  sudo chmod g+s /devteam-share```
+  ls -ld /devteam-share```
 
 ## Sticky Bit
 - Create shared folder (like /tmp):
-sudo mkdir /shared
-sudo chmod 1777 /shared
+  ```bash
+  sudo mkdir /shared```
+  sudo chmod 1777 /shared```
 
 - Result:
-All users can create files, but only the file owner or root can delete them.
+  All users can create files, but only the file owner or root can delete them.
 
 ## Summary
-adduser, usermod, deluser → manage users.
-
-groupadd, groupdel, usermod -aG → manage groups.
-
-SGID → ensures group consistency inside shared folders.
-
-Sticky Bit → protects files in shared directories.
+- adduser, usermod, deluser → manage users.
+- groupadd, groupdel, usermod -aG → manage groups.
+- SGID → ensures group consistency inside shared folders.
+- Sticky Bit → protects files in shared directories.
