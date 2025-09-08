@@ -1,8 +1,9 @@
-## User Management
+## 1. User Management
 - Check current user:
 whoami
 id
 groups
+
 
 - Add new user:
 sudo adduser alice
