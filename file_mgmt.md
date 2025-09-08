@@ -6,7 +6,8 @@
   touch file1.txt
 
 - Create directory:
-mkdir dir1
+  ```bash
+  mkdir dir1
 
 - Copy & move:
 cp file1.txt dir1/
