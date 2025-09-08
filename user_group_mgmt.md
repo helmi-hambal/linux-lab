@@ -19,8 +19,9 @@
   id alice```
 
 - Delete user:
-sudo deluser alice
-sudo deluser --remove-home alice   # remove home dir as well
+  ```bash
+  sudo deluser alice```
+  sudo deluser --remove-home alice   # remove home dir as well```
 
 ## Group Management
 - Create new group:
