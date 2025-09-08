@@ -1,21 +1,22 @@
 ## 1. User Management
 - Check current user:
-```bash
-whoami```
-id```
-groups```
+  ```bash
+  whoami```
+  id```
+  groups```
 
 - Add new user:
-```bash
-sudo adduser alice```
-
+  ```bash
+  sudo adduser alice```
 
 - Modify user (add to group):
-sudo usermod -aG devteam alice
+  ```bash
+  sudo usermod -aG devteam alice```
 
 - View user info:
-getent passwd alice
-id alice
+  ```bash
+  getent passwd alice```
+  id alice```
 
 - Delete user:
 sudo deluser alice
