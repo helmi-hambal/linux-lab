@@ -15,8 +15,9 @@
   mv file1.txt file2.txt
 
 - Delete:
-rm file2.txt
-rmdir dir1
+  ```bash
+  rm file2.txt
+  rmdir dir1
 
 ## 2. File Viewing & Editing
 - View content:
